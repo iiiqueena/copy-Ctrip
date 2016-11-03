@@ -1,0 +1,469 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+body{
+
+	width: 1280px;
+	font-family: "Microsoft YaHei", "SimHei", SimSun, Tahoma, Verdana, Arial, sans-serif;
+}
+.header{
+	font-size: 0;
+}
+
+/*    search & info  */
+.firstline{
+	font-size: 0;
+	margin: 8px 50px;
+}
+.search, .info {
+	display: inline-block;
+	width: 50%;
+	font-size: 0;
+	vertical-align: middle;
+}
+.logo, .searchArea{
+	display: inline-block;
+	vertical-align: middle;
+}
+.logo{
+	width: 20%;
+}
+.logo > img{
+	width: 100%;
+}
+.searchArea{
+	font-size: 12px;
+	width: 70%;
+	position: relative;
+	margin-left: 10%
+}
+.searchText, .searchIcon{
+	vertical-align: middle;
+}
+.searchText{
+	width: 60%;
+	border-radius: 2px;
+	border-left: solid #8ebefc 1px;
+	border-top: solid #8ebefc 1px;
+	border-bottom: solid #8ebefc 1px;
+	padding: 5px 2px;
+	position: relative;
+	height: 17px;
+	bottom: 8px;
+}
+#search{
+	color: white;
+	border: solid #8ebefc 1px;
+	border-radius: 2px;
+	height: 27px;
+	background-color: #a4cbff;
+	position: relative;
+	right: 33px;
+	top: 3px;
+}
+
+
+.info{
+	position: relative;
+}
+
+.sites, .scancode{
+	display: inline-block;
+}
+.sites{
+	width: 80%;
+}
+.scancode{
+	width: 20%;
+}
+.sites > li{
+	width: 30%;
+	font-size: 12px;
+	display: inline-block;
+	text-align: left;
+	color: #4c4c4c;
+	position: relative;
+}
+.dropdown > img{
+	width: 10%;
+}
+.dropdown{
+	position: relative;
+	z-index: 999;
+	display: inline-block;
+	background: #fff;
+	padding-bottom: 10px;
+}
+
+.servicelist{
+	display: none;
+	position: absolute;
+	padding: 10px 15px 10px  15px;	
+	background-color: white;
+	width: 150%;
+	list-style: none;
+	border:1px solid #b8b8b8;
+	z-index: 1;
+	top: 26px;
+}
+#servicecall{
+	position: absolute;
+	right: 5px;
+	top: 25px;
+}
+.servicelist > li{
+	border-top: dashed 1px rgb(184,184,184);
+	line-height: 30px;
+	height: 30px;
+}
+.flag{
+	width: 10%;
+	height: 45%;
+	vertical-align: middle;
+	border: solid 1px rgb(184,184,184);
+	margin-right: 5%;
+}
+#servicecall > *{
+	text-align: right;
+}
+.dropdown:hover ~ .servicelist{
+	display: block;
+	
+}
+
+.dropdown:hover {
+	border:1px solid #b8b8b8;
+	border-bottom: none;
+	position: relative;
+	z-index: 100;
+}
+.scancode{
+	position: relative;
+}
+#scancode{
+	width: 15%;
+	padding-right: 10%;	
+}
+
+/* nav    *********/
+
+#firstline, #secondline{
+	position: relative;
+	padding: 0 50px;	
+	height: 40px;
+}
+#firstline{
+	background-color: #2577e3;
+}
+.navbar{
+	width: 80%;
+	position: relative;
+	line-height: 40px;
+	height: 40px;
+	display: inline-block;
+	font-size: 16px;
+	color: white;
+	font-family: 'microsoft yahei', Arial, sans-serif;
+}
+.navbar >li{
+	padding-right: 10px;
+	display: inline-block;
+	width: 6%;
+	text-align: center;
+}
+.login{
+	display: inline-block;
+	padding-top: 3px;
+	padding-left: 3px;
+	float: right;
+	display: inline-block;
+	background-color: #ff9913;
+	height: 40px;
+}
+.login > ul> li{
+	display: block;
+	font-size: 8px;
+	vertical-align: middle;
+	color: white;
+	padding-bottom: 5px;
+}
+.login > ul> li >img{
+	width: 10%;
+}
+#secondline{
+	background-color: white;
+}
+.navdropdown{
+	position: relative;
+}
+.navdropdown > a{
+	text-decoration: none;
+	color: white;
+}
+.navdetail{
+	display:none;
+	font-size: 12px;
+	line-height: 30px;
+	border:solid 1px #0a56bb;
+	border-top: 0;
+	position: relative;
+}
+#mainnav{
+	display: block;
+}
+.navdetail > ul > li{
+	display: inline-block;
+	padding: 0 10px;
+}
+
+
+/*   sales    */
+.sales{
+	font-size: 8px;
+	position: relative;
+}
+
+.bannerarea{
+	width: 1280px;
+	position: relative;
+	right: 300px;
+}
+
+.banner{	
+	position: absolute;
+	display: none;
+	width: 150%;
+	height: 340px;
+	clip: rect(0px 1580px 340px 300px);
+}
+#banner1{
+	display: block;
+}
+
+.salesnav{
+	font-size: 0;
+	position: relative;
+	width: 50%;
+	padding-top: 25px;
+	margin: 0 0 25px 50px;
+	font-family: 'microsoft yahei', Arial, sans-serif;
+}
+
+.salesbar, .contentarea{
+	display: inline-block;
+	line-height: 20px;
+	vertical-align: top;
+}
+
+.salesbar{
+	font-size: 12px;
+	color: white;
+	font-family: 'microsoft yahei', Arial, sans-serif;
+}
+
+.salesbar > ul{
+	list-style-type: none;
+	background-color: #2577e3;
+}
+
+.contenttitle{
+	border-bottom: 1px dashed #aac3f1;
+	padding: 10px 15px 10px 0;
+	margin: 0 8px;
+	font-size: 16px;
+}
+.contenttitle:hover .contenttitle{
+	background-color: white;
+	color: #2577e3;
+}
+.contenttitle:hover .contenttitle > a{
+	color: #2577e3;
+}
+.contenttitle > a{
+	color: white;
+}
+
+#lastline{
+	border-bottom: none;
+}
+
+.contentarea{
+	position: relative;
+	width: 65%;
+	padding-left: 30px;
+	background-color: white;
+	padding: 12px 25px;
+	height: 262px;
+}
+.content{
+	position: absolute;
+	display: none;
+}
+#content1{
+	display: block;
+}
+.searchhotel{
+	height: 30px;
+	width: 50px;
+}
+
+.contentbar{
+	margin-bottom: 10px;
+	border-bottom: solid 3px #d2d2d2;
+}
+.contentbar >li{
+	display: inline-block;
+	font-family: "Microsoft YaHei", SimSun, Tahoma, Verdana, Arial, sans-serif;
+	font-size: 14px;
+	padding-right: 10px;
+
+}
+.contentdetail{
+	font-family: "Microsoft YaHei", SimSun, Tahoma, Verdana, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 35px;
+}
+
+.tab{
+	display: none;
+}
+
+
+#tab1{
+	display: block;
+}
+
+input{
+	border-radius: 1px;
+}
+
+#keyword{
+	width: 260px;
+}
+
+.searchhotel{
+	width: 120px;
+	position: relative;
+	background-color: orange;
+	color: white;
+	left: 300px;
+	vertical-align: baseline;
+}
+
+/*** mainbody ******/
+.mainbody{
+	padding: 50px 50px 0 50px;
+	background-color: #f6f6f6;
+}
+/** trip **/
+.tripcontent{
+	display: none;
+}
+#trip1{
+	display: block;
+}
+.trip{
+	font-size: 0;
+}
+.tripnav{
+	padding-bottom: 8px;
+	border-bottom: solid 2px #3983e5;
+	font-size: 16px;
+}
+
+.tripnavbar{
+	display: inline-block;
+
+}
+.tripnavbar > li{
+	display: inline-block;
+}
+.tripnav > span{
+	float: right;
+}
+.contentdetail, .tripad{
+	display: inline-block;
+	background-color: white;
+	vertical-align: top;
+}
+.triptab{
+	padding: 10px 10px 10px 20px;
+	background-color: white;
+}
+
+.tripcontent{
+	display: 
+}
+.contenttab > ul{
+	margin-bottom: 10px;
+	display: inline-block;
+}
+.contenttab > ul >li{
+	display: inline-block;
+	padding: 2px 2px;
+	margin-right: 10px;
+	font-size: 12px;
+	border:1px solid black;
+	border-radius: 2px;
+}
+.contenttab >span{
+	font-size: 12px;
+	display: inline-block;
+	float: right;
+}
+.contentdetail{
+	width: 80%;
+}
+.tripad{
+	font-size: 12px;
+	width: 15%;
+}
+.contentphoto{
+	font-size: 0;
+	display: none;
+}
+#contentphoto11, #contentphoto21, #contentphoto31, #contentphoto41, #contentphoto51, #contentphoto61{
+	display: block;
+}
+.tripphoto{
+	display: inline-block;
+	width: 25%;	
+	font-size: 8px;
+	line-height: 16px;
+}
+.photo{
+	position: relative;	
+	font-size: 0;
+}
+.photo > img{
+	width: 95%;
+	z-index: 0;
+}
+.shadow{
+	font-size: 10px;
+	color: white;
+	width: 95%;
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	line-height: 15px;
+	bottom: 8px;
+	z-index: 99;	
+}
+.title{
+	margin-left: 5px;
+}
+.seat{
+	margin-left: 5px;
+	margin-right: 90px;
+}
+.price {
+	font-size: 22px;
+	color: #f60;
+	text-align: right;
+}

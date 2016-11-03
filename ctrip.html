@@ -1,0 +1,1558 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>copy Ctrip</title>
+	<link rel="stylesheet" type="text/css" href="ctrip.css">
+	<script type="text/javascript" src="ctrip.js"></script>
+</head>
+<body>
+	<header>
+		<div class="firstline">
+			<div class="search">
+				<a class="logo" href="http//www.ctrip.com/"><img src="img/logo.png"></a>
+				<div class="searchArea">
+					<input class="searchText" type="text" placeholder="低价风暴，门票九元起"><a href="#"></input>
+					<img onmouseover="mouseOverColor()" onmouseout="mouseOutColor()" id='search' src="img/searchicon.png"></a>
+					
+				</div>
+			</div>
+			<div class="info">
+				<ul class="sites">
+					<li><div class="dropdown"><img src="img/global.png"> Global Sites <img   src="img/dropdown.png"></div>
+						<ul class="servicelist">
+							<li><img src="img/japan.png" class="flag">日本</li>
+							<li><img src="img/korea.png" class="flag">韩国</li>
+							<li><img src="img/USA.png" class="flag">美国</li>
+							<li><img src="img/Australia.png" class="flag">澳大利亚</li>
+						</ul>	
+					</li>
+					<li>|  客服中心  
+					
+					</li>
+					<li>| <div class="dropdown">国内400-830-6666  <img src="img/dropdown.png"></div>
+						<ul class="servicelist" id="servicecall">
+							<li>（或）400-820-6666</li>
+							<li>香港：+ 852-3069-9966</li>
+							<li>海外：+ 86-21-3406-4888</li>
+						</ul>
+					</li>
+				</ul>
+				<div class="scancode">
+					<img id="scancode" src="img/phone.png">
+					<img id="scancode" src="img/wechat.png">
+				</div>
+			</div>
+		</div>
+		<div class="nav">
+			<div id="firstline">
+				<ul class="navbar">
+					<li class="navdropdown"><a href="">首页</a>
+						<!--<div class="navdetail"><ul id="mainnav">
+							<li>国际旅行直通车</li>
+							<li>海外酒店</li>
+							<li>国际机票</li>
+							<li>国际租车</li>
+							<li>国际/台湾火车票</li>
+							<li>出境旅游</li>
+							<li>顶级游</li>
+							<li>海外门票</li>
+							<li>签证</li>
+							<li>出境保险</li>
+							<li>出境wifi</li>
+						</ul></div>-->
+					</li>
+					<li class="navdropdown"><a href="">酒店</a>
+						<!--<div class="navdetail"><ul>
+							<li>国内酒店</li>
+							<li>海外酒店</li>
+							<li>海外民宿+短租</li>
+							<li>团购</li>
+							<li>特价酒店</li>
+							<li>途家公寓</li>
+							<li>酒店+景点</li>
+							<li>客栈民宿</li>
+							<li>团队房+会场</li>
+						</ul></div>-->
+					</li>
+					<li class="navdropdown"><a href="">旅游</a>
+						<!--<div class="navdetail"><ul>
+							<li>旅游首页</li>
+							<li>周末游</li>
+							<li>跟团游</li>
+							<li>自由行</li>
+							<li>邮轮</li>
+							<li>酒店+景点</li>
+							<li>当地玩乐</li>
+							<li>主题游玩</li>
+							<li>定制游</li>
+							<li>游学</li>
+							<li>签证</li>
+							<li>企业会奖</li>
+							<li>顶级游</li>
+							<li>爱玩户外</li>
+							<li>保险</li>
+							<li>特卖汇</li>
+						</ul></div>-->
+					</li>
+					<li class="navdropdown"><a href="">机票</a>
+						<!--<div class="navdetail"><ul>
+							<li>国内机票</li>
+							<li>国外机票</li>
+							<li>机+酒</li>
+							<li>航班动态</li>
+							<li>值机选座</li>
+							<li>退票改签</li>
+							<li>机场攻略</li>
+							<li>机场巴士</li>
+							<li>公务员通道</li>
+							<li>发现低价</li>
+						</ul></div>-->
+					</li>
+					<li class="navdropdown"><a href="">火车</a>
+						<!--<div class="navdetail"><ul>
+							<li>国内火车票</li>
+							<li>国际/台湾火车票</li>
+						</ul></div>-->
+					</li>
+					<li class="navdropdown"><a href="">汽车票</a>
+						<!--<div class="navdetail"><ul>
+							<li>汽车票</li>
+							<li>机场巴士</li>
+							<li>船票</li>
+						</ul></div>-->
+					</li>
+					<li class="navdropdown"><a href="">用车</a>
+						<!--<div class="navdetail"><ul>
+							<li>用车首页</li>
+							<li>国际租车</li>
+							<li>国际接送机</li>
+							<li>国内租车</li>
+							<li>国内接送机/火车</li>
+							<li>国内包车</li>
+							<li>海外包车</li>
+						</ul></div>-->
+					</li>
+					<li class="navdropdown"><a href="">门票</a>
+						<!--<div class="navdetail"><ul>
+							<li>国内门票</li>
+							<li>海外门票</li>
+							<li>当地玩乐</li>
+							<li>出境wifi</li>
+							<li>周末游</li>
+							<li>迪士尼</li>
+						</ul></div>-->
+					</li>
+					<li class="navdropdown"><a href="">团购</a>
+						<!--<div class="navdetail"><ul>
+							<li>团购首页</li>
+							<li>酒店</li>
+							<li>门票</li>
+							<li>旅游</li>
+							<li>美食</li>
+						</ul></div>-->
+					</li>
+					<li class="navdropdown"><a href="#">攻略</a></li>
+					<li class="navdropdown"><a href="">全球购</a>
+						<!--<div class="navdetail"><ul>
+							<li>名店购</li>
+							<li>退税</li>
+							<li>银联特惠</li>
+							<li>万千赏</li>
+						</ul></div>-->
+					</li>
+					<li class="navdropdown"><a href="">礼品卡</a>
+						<!--<div class="navdetail"><ul>
+							<li>礼品卡首页</li>
+							<li>礼品卡+</li>
+							<li>礼品卡套餐</li>
+							<li>存款证明</li>
+						</ul></div>-->
+					</li>
+					<li class="navdropdown"><a href="">商旅</a>
+						<!--<div class="navdetail"><ul>
+							<li>商旅首页</li>
+							<li>企业差旅平台</li>
+							<li>会议旅游</li>
+						</ul></div>-->
+					</li>
+					<li class="navdropdown"><a href="#">邮轮</a></li>
+					<li class="navdropdown"><a href="#">天海邮轮</a></li>
+					<li class="navdropdown"><a href="">更多</a>
+						<!--<div class="navdetail"><ul>
+							<li>积分商城</li>
+							<li>合作卡</li>
+						</ul></div>-->
+					</li>
+				</ul>
+				<div class="login">
+					<ul>
+						<li><img src="img/account.png"><a href="">登陆</a> | <a href="">注册</a></li>
+						<li>我的携程
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="secondline">	
+				<div class="navdetail" id="mainnav"><ul>
+					<li>国际旅行直通车</li>
+					<li>海外酒店</li>
+					<li>国际机票</li>
+					<li>国际租车</li>
+					<li>国际/台湾火车票</li>
+					<li>出境旅游</li>
+					<li>顶级游</li>
+					<li>海外门票</li>
+					<li>签证</li>
+					<li>出境保险</li>
+					<li>出境wifi</li>
+				</ul></div>
+				<div class="navdetail"><ul>
+					<li>国内酒店</li>
+					<li>海外酒店</li>
+					<li>海外民宿+短租</li>
+					<li>团购</li>
+					<li>特价酒店</li>
+					<li>途家公寓</li>
+					<li>酒店+景点</li>
+					<li>客栈民宿</li>
+					<li>团队房+会场</li>
+				</ul></div>				
+				<div class="navdetail"><ul>
+					<li>旅游首页</li>
+					<li>周末游</li>
+					<li>跟团游</li>
+					<li>自由行</li>
+					<li>邮轮</li>
+					<li>酒店+景点</li>
+					<li>当地玩乐</li>
+					<li>主题游玩</li>
+					<li>定制游</li>
+					<li>游学</li>
+					<li>签证</li>
+					<li>企业会奖</li>
+					<li>顶级游</li>
+					<li>爱玩户外</li>
+					<li>保险</li>
+					<li>特卖汇</li>
+				</ul></div>		
+				<div class="navdetail"><ul>
+					<li>国内机票</li>
+					<li>国外机票</li>
+					<li>机+酒</li>
+					<li>航班动态</li>
+					<li>值机选座</li>
+					<li>退票改签</li>
+					<li>机场攻略</li>
+					<li>机场巴士</li>
+					<li>公务员通道</li>
+					<li>发现低价</li>
+				</ul></div>					
+				<div class="navdetail"><ul>
+					<li>国内火车票</li>
+					<li>国际/台湾火车票</li>
+				</ul></div>					
+				<div class="navdetail"><ul>
+					<li>汽车票</li>
+					<li>机场巴士</li>
+					<li>船票</li>
+				</ul></div>
+				<div class="navdetail"><ul>
+					<li>用车首页</li>
+					<li>国际租车</li>
+					<li>国际接送机</li>
+					<li>国内租车</li>
+					<li>国内接送机/火车</li>
+					<li>国内包车</li>
+					<li>海外包车</li>
+				</ul></div>						
+				<div class="navdetail"><ul>
+					<li>国内门票</li>
+					<li>海外门票</li>
+					<li>当地玩乐</li>
+					<li>出境wifi</li>
+					<li>周末游</li>
+					<li>迪士尼</li>
+				</ul></div>					
+				<div class="navdetail"><ul>
+					<li>团购首页</li>
+					<li>酒店</li>
+					<li>门票</li>
+					<li>旅游</li>
+					<li>美食</li>
+				</ul></div>	
+				<div class="navdetail"><ul>
+					<li>国际旅行直通车</li>
+					<li>海外酒店</li>
+					<li>国际机票</li>
+					<li>国际租车</li>
+					<li>国际/台湾火车票</li>
+					<li>出境旅游</li>
+					<li>顶级游</li>
+					<li>海外门票</li>
+					<li>签证</li>
+					<li>出境保险</li>
+					<li>出境wifi</li>
+				</ul></div>				
+				<div class="navdetail"><ul>
+					<li>名店购</li>
+					<li>退税</li>
+					<li>银联特惠</li>
+					<li>万千赏</li>
+				</ul></div>			
+				<div class="navdetail"><ul>
+					<li>礼品卡首页</li>
+					<li>礼品卡+</li>
+					<li>礼品卡套餐</li>
+					<li>存款证明</li>
+				</ul></div>		
+				<div class="navdetail"><ul>
+					<li>商旅首页</li>
+					<li>企业差旅平台</li>
+					<li>会议旅游</li>
+				</ul></div>	
+				<div class="navdetail"><ul>
+					<li>国际旅行直通车</li>
+					<li>海外酒店</li>
+					<li>国际机票</li>
+					<li>国际租车</li>
+					<li>国际/台湾火车票</li>
+					<li>出境旅游</li>
+					<li>顶级游</li>
+					<li>海外门票</li>
+					<li>签证</li>
+					<li>出境保险</li>
+					<li>出境wifi</li>
+				</ul></div>
+				<div class="navdetail"><ul>
+					<li>国际旅行直通车</li>
+					<li>海外酒店</li>
+					<li>国际机票</li>
+					<li>国际租车</li>
+					<li>国际/台湾火车票</li>
+					<li>出境旅游</li>
+					<li>顶级游</li>
+					<li>海外门票</li>
+					<li>签证</li>
+					<li>出境保险</li>
+					<li>出境wifi</li>
+				</ul></div>
+				<div class="navdetail"><ul>
+					<li>积分商城</li>
+					<li>合作卡</li>
+				</ul>
+			</div>
+		</div>
+		<div class="sales">
+			<div class="bannerarea">
+				<img class="banner"  src="img/banner1.jpg"></img>
+				<img class="banner" src="img/banner2.jpg"></img>
+				<img class="banner" src="img/banner3.jpg"></img>
+				<img class="banner" id="banner1" src="img/banner4.jpg"></img>
+				<img class="banner" src="img/banner5.jpg"></img>
+				<img class="banner" src="img/banner6.jpg"></img>
+				<img class="banner" src="img/banner7.jpg"></img>
+				<img class="banner" src="img/banner8.jpg"></img>
+				<img class="banner" src="img/banner9.jpg"></img>		
+			</div>
+			<div class="salesnav">
+				<div class="salesbar">
+					<ul>
+						<li class="contenttitle"><a href="#content1">酒店</a></li>
+						<li class="contenttitle"><a href="#content2">机票</a></li>
+						<li class="contenttitle"><a href="#content3">自由行</a></li>
+						<li class="contenttitle"><a href="#content4">旅游</a></li>
+						<li class="contenttitle"><a href="#content5">火车</a></li>
+						<li class="contenttitle"><a href="#content6">租车</a></li>
+						<li class="contenttitle" id="lastline"><a href="#content7">门票</a></li>
+					</ul>
+				</div>
+				<div class="contentarea">
+					<div class="content" id="content1">
+						<ul class="contentbar">
+							<li><a href="#">国内酒店</a></li>
+							<li><a href="#">海外酒店</a></li>
+							<li><a href="#">酒店团购</a></li>
+							<li><a href="#">酒店+景点</a></li>
+							<li><a href="#">会场+团队房</a></li>
+						</ul>
+						<div class="contentdetail">
+							<div class="tab" id="tab1">
+								<p><span class="catogory">目的地</span><input type="text" name="destination" placeholder="中文/拼音">	</p>
+								<p><span class="catogory">入住日期<input type="text" name="checkindate"></span><span>退房日期<input type="text" name="leavedate"></span></p>
+								<p><span class="catagory">酒店级别</span>
+									<select>
+								  	  <option value ="unlimited">不限</option>
+									  <option value ="fivestar">五星级/豪华</option>
+									  <option value="fourstar">四星级/高档 </option>
+									  <option value="threestar">三星级/舒适</option>
+									  <option value="twostar">二星级以下/经济</option>
+									</select>
+								</p>
+								<p><span class="catogory">关键词</span>	<input id="keyword" type="text" name="destination" placeholder="（选填）酒店名/地标/商圈">	</p>
+								<button class="searchhotel">搜索</button>
+							</div>
+							<div class="tab" id="tab2">
+								<p><span class="catogory">目的地</span>	<input type="text" name="destination" placeholder="城市/机场/地标/酒店">	</p>
+								<p><span class="catogory">入住日期<input type="text" name="checkindate"></span><span>退房日期<input type="text" name="leavedate"></span></p>
+								<p><span class="catogory">每间住客数</span>
+									<select>
+								  	  <option value ="2people">2成人</option>
+									  <option value ="3people">3成人</option>
+									  <option value ="4people">4成人</option>
+									  <option value ="5people">5成人</option>
+									  <option value ="6people">6成人</option>
+									  <option value ="7people">7成人</option>
+									  <option value ="8people">8成人</option>
+									</select>
+									<select>
+								  	  <option value ="0child">0儿童</option>
+								  	  <option value ="1child">1儿童</option>
+								  	  <option value ="2children">2儿童</option>
+								  	  <option value ="3children">3儿童</option>
+									</select>
+								</p>
+								<p><span class="catogory">关键词</span>	<input id="keyword" type="text" name="destination" placeholder="（选填）酒店名/地标">	</p>
+								<button class="searchhotel">搜索</button>
+							</div>
+							<div class="tab" id="tab3">
+								<p class="hotcity">
+									热门城市 <span>上海 广州 深圳 北京 成都 杭州 苏州 青岛 厦门 三亚</span>
+								</p>
+								<p class="hotsale">
+									热门团购 <span>度假公寓 别墅轰趴 住店游玩 情侣酒店 火车票专享</span>
+								</p>
+								<p><span class="catogory">目的地</span>	<input type="text" name="destination" placeholder="上海">	</p>
+								<p><span class="catogory">关键词</span>	<input id="keyword" type="text" name="destination" placeholder="（选填）商圈/景区/酒店品牌/酒店名称/地标">	</p>
+								<button class="searchhotel">搜索</button>
+							</div>
+							<div class="tab" id="tab4">
+								<p><span class="catogory">目的地</span>	<input type="text" name="destination" placeholder="中文/拼音">	</p>
+								<p><span class="catogory">入住日期<input type="text" name="checkindate"></span><span>退房日期<input type="text" name="leavedate"></span></p>
+								<p><span class="catagory">酒店级别</span>
+									<select>
+								  	  <option value ="unlimited">不限</option>
+									  <option value ="fivestar">五星级/豪华</option>
+									  <option value="fourstar">四星级/高档 </option>
+									  <option value="threestar">三星级/舒适</option>
+									  <option value="twostar">二星级以下/经济</option>
+									</select>
+								</p>
+								<p><span class="catogory">关键词</span>	<input id="keyword" type="text" name="destination" placeholder="酒店名称、景点名称、主题、人群......"></p>
+								<button class="searchhotel">搜索酒店+景点套餐</button>
+							</div>
+							<div class="tab" id="tab5">
+								<p><span class="catogory">活动城市</span>	<input type="text" name="destination" placeholder="上海">	</p>
+								<p><span class="catogory">活动人数</span>
+									<select>
+									  <option value ="unlimited">不限</option>
+									  <option value ="above50">50人以下</option>
+									  <option value="above100">50~100人</option>
+									  <option value="above200">101~200人</option>
+									  <option value="above300">201~300人</option>
+									  <option value="above500"above50>301~500人</option>
+									  <option value="500+">500人以上</option>
+									</select>
+								</p>
+								<p><span class="catogory">场地价格</span>
+									<select>
+									  <option value ="under3000">3千以下</option>
+									  <option value ="above5000">3~5千</option>
+									  <option value="above10000">5千~1万</option>
+									  <option value="above20000">1万~2万</option>
+									  <option value="above30000">2万~3万</option>
+									  <option value="30000+">3万以上</option>
+									</select>
+								</p>
+								<button class="searchhotel">定制需求</button>
+								<button class="searchhotel">搜索</button>
+							</div>					
+						</div>
+					</div>
+					<div class="content" id="content2">
+						<ul class="contentbar">
+							<li><a href="#">国内机票</a></li>
+							<li><a href="#">国际机票</a></li>
+						</ul>
+						<div class="contentdetail">
+							<div class="tab" id="tab1">
+								<p><span class="catogory">目的地</span><input type="text" name="destination" placeholder="中文/拼音">	</p>
+								<p><span class="catogory">入住日期<input type="text" name="checkindate"></span><span>退房日期<input type="text" name="leavedate"></span></p>
+								<p><span class="catagory">酒店级别</span>
+									<select>
+								  	  <option value ="unlimited">不限</option>
+									  <option value ="fivestar">五星级/豪华</option>
+									  <option value="fourstar">四星级/高档 </option>
+									  <option value="threestar">三星级/舒适</option>
+									  <option value="twostar">二星级以下/经济</option>
+									</select>
+								</p>
+								<p><span class="catogory">关键词</span>	<input id="keyword" type="text" name="destination" placeholder="（选填）酒店名/地标/商圈">	</p>
+								<button class="searchhotel">搜索</button>
+							</div>
+							<div class="tab" id="tab2">
+								<p><span class="catogory">目的地</span>	<input type="text" name="destination" placeholder="城市/机场/地标/酒店">	</p>
+								<p><span class="catogory">入住日期<input type="text" name="checkindate"></span><span>退房日期<input type="text" name="leavedate"></span></p>
+								<p><span class="catogory">每间住客数</span>
+									<select>
+								  	  <option value ="2people">2成人</option>
+									  <option value ="3people">3成人</option>
+									  <option value ="4people">4成人</option>
+									  <option value ="5people">5成人</option>
+									  <option value ="6people">6成人</option>
+									  <option value ="7people">7成人</option>
+									  <option value ="8people">8成人</option>
+									</select>
+									<select>
+								  	  <option value ="0child">0儿童</option>
+								  	  <option value ="1child">1儿童</option>
+								  	  <option value ="2children">2儿童</option>
+								  	  <option value ="3children">3儿童</option>
+									</select>
+								</p>
+								<p><span class="catogory">关键词</span>	<input id="keyword" type="text" name="destination" placeholder="（选填）酒店名/地标">	</p>
+								<button class="searchhotel">搜索</button>
+							</div>				
+						</div>
+					</div>
+					<div class="content" id="content3">
+						<ul class="contentbar">
+							<li><a href="#">机票+酒店</a></li>
+							<li><a href="#">酒店+景点</a></li>
+						</ul>
+						<div class="contentdetail">
+							<div class="tab" id="tab1">
+								<p><span class="catogory">目的地</span><input type="text" name="destination" placeholder="中文/拼音">	</p>
+								<p><span class="catogory">入住日期<input type="text" name="checkindate"></span><span>退房日期<input type="text" name="leavedate"></span></p>
+								<p><span class="catagory">酒店级别</span>
+									<select>
+								  	  <option value ="unlimited">不限</option>
+									  <option value ="fivestar">五星级/豪华</option>
+									  <option value="fourstar">四星级/高档 </option>
+									  <option value="threestar">三星级/舒适</option>
+									  <option value="twostar">二星级以下/经济</option>
+									</select>
+								</p>
+								<p><span class="catogory">关键词</span>	<input id="keyword" type="text" name="destination" placeholder="（选填）酒店名/地标/商圈">	</p>
+								<button class="searchhotel">搜索</button>
+							</div>
+							<div class="tab" id="tab2">
+								<p><span class="catogory">目的地</span>	<input type="text" name="destination" placeholder="城市/机场/地标/酒店">	</p>
+								<p><span class="catogory">入住日期<input type="text" name="checkindate"></span><span>退房日期<input type="text" name="leavedate"></span></p>
+								<p><span class="catogory">每间住客数</span>
+									<select>
+								  	  <option value ="2people">2成人</option>
+									  <option value ="3people">3成人</option>
+									  <option value ="4people">4成人</option>
+									  <option value ="5people">5成人</option>
+									  <option value ="6people">6成人</option>
+									  <option value ="7people">7成人</option>
+									  <option value ="8people">8成人</option>
+									</select>
+									<select>
+								  	  <option value ="0child">0儿童</option>
+								  	  <option value ="1child">1儿童</option>
+								  	  <option value ="2children">2儿童</option>
+								  	  <option value ="3children">3儿童</option>
+									</select>
+								</p>
+								<p><span class="catogory">关键词</span>	<input id="keyword" type="text" name="destination" placeholder="（选填）酒店名/地标">	</p>
+								<button class="searchhotel">搜索</button>
+							</div>				
+						</div>
+					</div>
+					<div class="content" id="content4">
+						<ul class="contentbar">
+							<li>国内：<a href="#">周边</a></li>
+							<li>出境：<a href="#">海外酒店</a></li>
+							<li>特色：<a href="#">酒店团购</a></li>
+							<li>攻略<a href="#">酒店+景点</a></li>
+						</ul>
+						<div class="contentdetail">
+							<div>
+							</div>					
+						</div>
+					</div>
+					<div class="content" id="content5">
+						<ul class="contentbar">
+							<li><a href="#">国内火车票</a></li>
+							<li><a href="#">国际/台湾火车票</a></li>
+							<li><a href="#">国内汽车票</a></li>
+						</ul>
+						<div class="contentdetail">
+							<div class="tab" id="tab1">
+								<p><span class="catogory">目的地</span><input type="text" name="destination" placeholder="中文/拼音">	</p>
+								<p><span class="catogory">入住日期<input type="text" name="checkindate"></span><span>退房日期<input type="text" name="leavedate"></span></p>
+								<p><span class="catagory">酒店级别</span>
+									<select>
+								  	  <option value ="unlimited">不限</option>
+									  <option value ="fivestar">五星级/豪华</option>
+									  <option value="fourstar">四星级/高档 </option>
+									  <option value="threestar">三星级/舒适</option>
+									  <option value="twostar">二星级以下/经济</option>
+									</select>
+								</p>
+								<p><span class="catogory">关键词</span>	<input id="keyword" type="text" name="destination" placeholder="（选填）酒店名/地标/商圈">	</p>
+								<button class="searchhotel">搜索</button>
+							</div>
+							<div class="tab" id="tab2">
+								<p><span class="catogory">目的地</span>	<input type="text" name="destination" placeholder="城市/机场/地标/酒店">	</p>
+								<p><span class="catogory">入住日期<input type="text" name="checkindate"></span><span>退房日期<input type="text" name="leavedate"></span></p>
+								<p><span class="catogory">每间住客数</span>
+									<select>
+								  	  <option value ="2people">2成人</option>
+									  <option value ="3people">3成人</option>
+									  <option value ="4people">4成人</option>
+									  <option value ="5people">5成人</option>
+									  <option value ="6people">6成人</option>
+									  <option value ="7people">7成人</option>
+									  <option value ="8people">8成人</option>
+									</select>
+									<select>
+								  	  <option value ="0child">0儿童</option>
+								  	  <option value ="1child">1儿童</option>
+								  	  <option value ="2children">2儿童</option>
+								  	  <option value ="3children">3儿童</option>
+									</select>
+								</p>
+								<p><span class="catogory">关键词</span>	<input id="keyword" type="text" name="destination" placeholder="（选填）酒店名/地标">	</p>
+								<button class="searchhotel">搜索</button>
+							</div>
+							<div class="tab" id="tab3">
+								<p class="hotcity">
+									热门城市 <span>上海 广州 深圳 北京 成都 杭州 苏州 青岛 厦门 三亚</span>
+								</p>
+								<p class="hotsale">
+									热门团购 <span>度假公寓 别墅轰趴 住店游玩 情侣酒店 火车票专享</span>
+								</p>
+								<p><span class="catogory">目的地</span>	<input type="text" name="destination" placeholder="上海">	</p>
+								<p><span class="catogory">关键词</span>	<input id="keyword" type="text" name="destination" placeholder="（选填）商圈/景区/酒店品牌/酒店名称/地标">	</p>
+								<button class="searchhotel">搜索</button>
+							</div>				
+						</div>
+					</div>
+					<div class="content" id="content6">
+						<ul class="contentbar">
+							<li><a href="#">国内接送机</a></li>
+							<li><a href="#">国际接送机</a></li>
+							<li><a href="#">国内租车</a></li>
+							<li><a href="#">国际租车</a></li>
+							<li><a href="#">日租包车</a></li>
+						</ul>
+						<div class="contentdetail">
+							<div class="tab" id="tab1">
+								<p><span class="catogory">目的地</span><input type="text" name="destination" placeholder="中文/拼音">	</p>
+								<p><span class="catogory">入住日期<input type="text" name="checkindate"></span><span>退房日期<input type="text" name="leavedate"></span></p>
+								<p><span class="catagory">酒店级别</span>
+									<select>
+								  	  <option value ="unlimited">不限</option>
+									  <option value ="fivestar">五星级/豪华</option>
+									  <option value="fourstar">四星级/高档 </option>
+									  <option value="threestar">三星级/舒适</option>
+									  <option value="twostar">二星级以下/经济</option>
+									</select>
+								</p>
+								<p><span class="catogory">关键词</span>	<input id="keyword" type="text" name="destination" placeholder="（选填）酒店名/地标/商圈">	</p>
+								<button class="searchhotel">搜索</button>
+							</div>
+							<div class="tab" id="tab2">
+								<p><span class="catogory">目的地</span>	<input type="text" name="destination" placeholder="城市/机场/地标/酒店">	</p>
+								<p><span class="catogory">入住日期<input type="text" name="checkindate"></span><span>退房日期<input type="text" name="leavedate"></span></p>
+								<p><span class="catogory">每间住客数</span>
+									<select>
+								  	  <option value ="2people">2成人</option>
+									  <option value ="3people">3成人</option>
+									  <option value ="4people">4成人</option>
+									  <option value ="5people">5成人</option>
+									  <option value ="6people">6成人</option>
+									  <option value ="7people">7成人</option>
+									  <option value ="8people">8成人</option>
+									</select>
+									<select>
+								  	  <option value ="0child">0儿童</option>
+								  	  <option value ="1child">1儿童</option>
+								  	  <option value ="2children">2儿童</option>
+								  	  <option value ="3children">3儿童</option>
+									</select>
+								</p>
+								<p><span class="catogory">关键词</span>	<input id="keyword" type="text" name="destination" placeholder="（选填）酒店名/地标">	</p>
+								<button class="searchhotel">搜索</button>
+							</div>
+							<div class="tab" id="tab3">
+								<p class="hotcity">
+									热门城市 <span>上海 广州 深圳 北京 成都 杭州 苏州 青岛 厦门 三亚</span>
+								</p>
+								<p class="hotsale">
+									热门团购 <span>度假公寓 别墅轰趴 住店游玩 情侣酒店 火车票专享</span>
+								</p>
+								<p><span class="catogory">目的地</span>	<input type="text" name="destination" placeholder="上海">	</p>
+								<p><span class="catogory">关键词</span>	<input id="keyword" type="text" name="destination" placeholder="（选填）商圈/景区/酒店品牌/酒店名称/地标">	</p>
+								<button class="searchhotel">搜索</button>
+							</div>
+							<div class="tab" id="tab4">
+								<p><span class="catogory">目的地</span>	<input type="text" name="destination" placeholder="中文/拼音">	</p>
+								<p><span class="catogory">入住日期<input type="text" name="checkindate"></span><span>退房日期<input type="text" name="leavedate"></span></p>
+								<p><span class="catagory">酒店级别</span>
+									<select>
+								  	  <option value ="unlimited">不限</option>
+									  <option value ="fivestar">五星级/豪华</option>
+									  <option value="fourstar">四星级/高档 </option>
+									  <option value="threestar">三星级/舒适</option>
+									  <option value="twostar">二星级以下/经济</option>
+									</select>
+								</p>
+								<p><span class="catogory">关键词</span>	<input id="keyword" type="text" name="destination" placeholder="酒店名称、景点名称、主题、人群......"></p>
+								<button class="searchhotel">搜索酒店+景点套餐</button>
+							</div>
+							<div class="tab" id="tab5">
+								<p><span class="catogory">活动城市</span>	<input type="text" name="destination" placeholder="上海">	</p>
+								<p><span class="catogory">活动人数</span>
+									<select>
+									  <option value ="unlimited">不限</option>
+									  <option value ="above50">50人以下</option>
+									  <option value="above100">50~100人</option>
+									  <option value="above200">101~200人</option>
+									  <option value="above300">201~300人</option>
+									  <option value="above500"above50>301~500人</option>
+									  <option value="500+">500人以上</option>
+									</select>
+								</p>
+								<p><span class="catogory">场地价格</span>
+									<select>
+									  <option value ="under3000">3千以下</option>
+									  <option value ="above5000">3~5千</option>
+									  <option value="above10000">5千~1万</option>
+									  <option value="above20000">1万~2万</option>
+									  <option value="above30000">2万~3万</option>
+									  <option value="30000+">3万以上</option>
+									</select>
+								</p>
+								<button class="searchhotel">定制需求</button>
+								<button class="searchhotel">搜索</button>
+							</div>					
+						</div>
+					</div>
+					<div class="content" id="content7">
+						<ul class="contentbar">
+							<li>热门活动：<a href="#">国内酒店</a></li>
+							<li>精选城市：<a href="#">海外酒店</a></li>
+							<li>主体玩乐：<a href="#">酒店团购</a></li>
+							<li>热门推荐：<a href="#">酒店+景点</a></li>
+						</ul>
+						<div>				
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="mainbody">
+
+		<div class="trip">
+			<div class="tripnav">
+				<ul class="tripnavbar">
+					<li>特卖汇</li>
+					<li>出境游</li>
+					<li>国内游</li>
+					<li>周边游</li>
+					<li>邮轮</li>
+					<li>门票</li>
+					<li>顶级游</li>
+				</ul>
+				<span>北京出发</span>
+
+			</div>
+			<div class="triptab">
+				<div class="tripcontent" id="trip1">
+					<div class="contenttab">
+						<ul>
+							<li class="active">精选</li>
+							<li>跟团游</li>
+							<li>自由行</li>
+							<li>当地游</li>
+							<li><a href="#">邮轮游</a></li>
+						</ul>
+						<span><a href="#">更多特卖汇 > </a></span>
+					</div>
+					<div class="tripdetail">
+						<div class="contentdetail">
+							<div class="contentphoto" id="contentphoto11" class="acitve">
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+							</div>
+							<div class="contentphoto" id="contentphoto12">
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+							</div>
+							<div class="contentphoto" id="contentphoto13">
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+							</div>
+							<div class="contentphoto" id="contentphoto14">
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+							</div>
+						</div>
+						<div class="tripad">
+							<img src="img/tripad.png">
+						</div>
+					</div>
+				</div>
+				<div class="tripcontent" id="trip2">
+					<div class="sidebar">
+						
+					</div>
+					<div class="contenttab">
+						<ul>
+							<li class="active">精选</li>
+							<li>香港</li>
+							<li>台湾</li>
+							<li>日本</li>
+							<li>韩国</li>
+							<li>泰国</li>
+							<li>马尔代夫</li>
+							<li class="more">更多</li>
+						</ul>
+						<span><a href="#">更多<span class="selecet">出境游</span> > </a></span>
+					</div>
+					<div class="tripdetail">
+						<div class="contentdetail">
+							<div class="contentphoto" id="contentphoto21" class="acitve">
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+							</div>
+							<div class="contentphoto" id="contentphoto22">
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+							</div>
+							<div class="contentphoto" id="contentphoto23">
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+							</div>
+							<div class="contentphoto" id="contentphoto24">
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+							</div>
+							<div class="contentphoto" id="contentphoto25">
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+							</div>
+							<div class="contentphoto" id="contentphoto26">
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+							</div>
+							<div class="contentphoto" id="contentphoto27">
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+								<div class="tripphoto">
+									<div class="photo">
+									<img src="img/contentphoto.jpg">
+									<p class="shadow">阴影部分文字</p></div>
+									<p class="title">你想不想出去玩啊问你呢</p>
+									<p><span class="seat">席位充足</span>
+									￥<span class="price">2599</span>起</p>
+								</div>
+							</div>
+						</div>
+						<div class="tripad">
+							<img src="img/tripad.png">
+						</div>
+					</div>
+				</div>
+				<div class="tripcontent" id="trip3"></div>
+				<div class="tripcontent" id="trip4"></div>
+				<div class="tripcontent" id="trip5"></div>
+				<div class="tripcontent" id="trip6"></div>
+				<div class="tripcontent" id="trip7"></div>
+			</div>
+			
+		</div>
+		<div class="hotel"></div>
+		<div class="airline"></div>
+		<div class="taxi"></div>
+		<div class="locla"></div>
+		<div class="global"></div>
+		<div class="destination"></div>
+		<div class="service"></div>
+		<div class="corp"></div>		
+	</div>
+	<div class="footer">
+		
+	</div>
+
+</body>
+</html>
