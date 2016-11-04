@@ -235,15 +235,83 @@ body{
 	right: 300px;
 }
 
-.banner{	
+.banner{
 	position: absolute;
-	display: none;
-	width: 150%;
-	height: 340px;
-	clip: rect(0px 1580px 340px 300px);
+	top: 0;
+	left: 0;
+	opacity: 0;
+    filter: alpha(opacity=0);
 }
-#banner1{
+.banner a{
 	display: block;
+}
+.bannerarea div{
+	-webkit-animation:slide 38.6s linear infinite;
+	animation:slide 38.6s linear infinite;
+}
+@keyframes slide{
+	0.5%{
+		opacity: 1;
+		filter: alpha(opacity=100);
+	}
+	12.5%{
+		opacity: 1;
+		filter: alpha(opacity=100);
+	}
+	13%{
+		opacity: 0;
+		filter: alpha(opacity=0);
+	}
+}
+@-webkit-keyframes slide{
+	0.5%{
+		opacity: 1;
+		filter: alpha(opacity=100);
+	}
+	12%{
+		opacity: 1;
+		filter: alpha(opacity=100);
+	}
+	12.5%{
+		opacity: 0;
+		filter: alpha(opacity=0);
+	}
+}
+.bannerarea div:nth-child(1){
+	-webkit-animation-delay:0s;
+	animation-delay: 0s;
+}
+.bannerarea div:nth-child(2){
+	-webkit-animation-delay:4.8s;
+	animation-delay: 4.8s;
+}
+.bannerarea div:nth-child(3){
+	-webkit-animation-delay:9.6s;
+	animation-delay: 9.6s;
+}
+.bannerarea div:nth-child(4){
+	-webkit-animation-delay:14.4s;
+	animation-delay: 14.4s;
+}
+.bannerarea div:nth-child(5){
+	-webkit-animation-delay:19.2s;
+	animation-delay: 19.2s;
+}
+.bannerarea div:nth-child(6){
+	-webkit-animation-delay:24s;
+	animation-delay: 24s;
+}
+.bannerarea div:nth-child(7){
+	-webkit-animation-delay:28.8s;
+	animation-delay: 28.8s;
+}
+.bannerarea div:nth-child(8){
+	-webkit-animation-delay:33.6s;
+	animation-delay: 33.6s;
+}
+.bannerarea:hover div {
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
 }
 
 .salesnav{
