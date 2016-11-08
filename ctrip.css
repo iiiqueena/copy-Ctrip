@@ -257,11 +257,11 @@ body{
 		opacity: 1;
 		filter: alpha(opacity=100);
 	}
-	12.5%{
+	12.4999%{
 		opacity: 1;
 		filter: alpha(opacity=100);
 	}
-	12.5001%{
+	12.5%{
 		opacity: 0;
 		filter: alpha(opacity=0);
 	}
@@ -312,7 +312,11 @@ body{
 	-webkit-animation-delay:35s;
 	animation-delay: 35s;
 }
-.bannerarea:hover div {
+.bannerarea:hover ~.controllbutton div{
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+}
+.bannerarea:hover div{
     -webkit-animation-play-state: paused;
             animation-play-state: paused;
 }
@@ -339,10 +343,10 @@ body{
 	0.0001%{
 		background-color: white;
 	}
-	12.5%{
+	12.4999%{
 		background-color: white;
 	}
-	12.5001%{
+	12.5%{
 		background-color:#c3c7c5
 	}
 }
@@ -350,10 +354,10 @@ body{
 	0.0001%{
 		background-color: white;
 	}
-	12.5%{
+	12.4999%{
 		background-color: white;
 	}
-	12.5001%{
+	12.5%{
 		background-color:#c3c7c5
 	}
 }
