@@ -312,7 +312,7 @@ body{
 	-webkit-animation-delay:35s;
 	animation-delay: 35s;
 }
-.bannerarea:hover ~.controllbutton div{
+.bannerarea:hover +.controllbutton div{
     -webkit-animation-play-state: paused;
             animation-play-state: paused;
 }
@@ -393,6 +393,20 @@ body{
 	-webkit-animation-delay:35s;
 	animation-delay: 35s;
 }
+.navradio{
+	display: none;
+}
+#navradio1:checked ~ .contentarea #content1, #navradio2:checked ~ .contentarea #content2, #navradio3:checked ~ .contentarea #content3, #navradio4:checked ~ .contentarea #content4, #navradio5:checked ~ .contentarea #content5, #navradio6:checked ~ .contentarea #content6, #navradio7:checked ~ .contentarea #content7{
+	display: block;
+}
+#navradio1:checked ~ .salesbar #contenttitle1, #navradio2:checked ~ .salesbar #contenttitle2, #navradio3:checked ~ .salesbar #contenttitle3, #navradio4:checked ~ .salesbar #contenttile4, #navradio5:checked ~ .salesbar #contenttitle5, #navradio6:checked ~ .salesbar #contenttitle6, #navradio7:checked ~ .salesbar #contenttitle7{
+	background-color: white;
+	border-left: 5px #fd982e solid;
+	color: #2577e3;
+}
+#navradio1:checked ~ .salesbar #navtab1, #navradio2:checked ~ .salesbar #navtab2, #navradio3:checked ~ .salesbar #navtab3, #navradio4:checked ~ .salesbar #navtab4, #navradio5:checked ~ .salesbar #navtab5, #navradio6:checked ~ .salesbar #navtab6, #navradio7:checked ~ .salesbar #navtab7{
+	color: #2577e3;
+}
 .salesnav{
 	font-size: 0;
 	position: relative;
@@ -414,29 +428,35 @@ body{
 	font-family: 'microsoft yahei', Arial, sans-serif;
 }
 
-.salesbar > ul{
-	list-style-type: none;
+.salesbar{	
 	background-color: #2577e3;
 }
 
-.contenttitle{
-	border-bottom: 1px dashed #aac3f1;
-	padding: 10px 15px 10px 0;
-	margin: 0 8px;
+.contenttitle{	
+	padding: 0;
 	font-size: 16px;
+	list-style-type: none;
+	border-left: 5px #2577e3 solid;
 }
-.contenttitle:hover .contenttitle{
+.navtab{
+	display: block;
+	border-bottom: 1px dashed #aac3f1;
+	padding: 10px 0;
+	margin: 0 15px 0 10px;
+}
+.contenttitle:hover {
 	background-color: white;
+	border-left: 5px #fd982e solid;
 	color: #2577e3;
 }
-.contenttitle:hover .contenttitle > a{
+.contenttitle:hover label{
 	color: #2577e3;
 }
 .contenttitle > a{
 	color: white;
 }
 
-#lastline{
+#contenttitle7{
 	border-bottom: none;
 }
 
@@ -452,8 +472,6 @@ body{
 	position: absolute;
 	display: none;
 }
-#content1{
-	display: block;
 }
 .searchhotel{
 	height: 30px;
