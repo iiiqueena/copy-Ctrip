@@ -596,6 +596,12 @@ input{
 #contentphoto11, #contentphoto21, #contentphoto31, #contentphoto41, #contentphoto51, #contentphoto61{
 	display: block;
 }
+.selectcontent{
+	display: block;
+}
+.subcontent{
+	display: none;
+}
 .tripphoto{
 	display: inline-block;
 	width: 25%;	
