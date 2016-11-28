@@ -16,19 +16,20 @@ function subtab(){
 		contentbar[i] = content[i].children[0];
 		contentdetail[i] = content[i].children[1];
 		var subtab = contentbar[i].getElementsByTagName('li');
-		var subcontent = contentdetail[i].getElementsByClassName('subcontent');
+		var subcontent = contentdetail[i].getElementsByClassName('subcontent');		
 		for (var j = 0; j < subtab.length; j++) {
 			subtab[j].id = j;
 			subtab[j].onclick = function(){				
 				for (var a = 0; a < subcontent.length; a++) {
 					subcontent[a].style.display = 'none';
-					subcontent[a].className = '';
-				}
+					//subcontent[a].className = '';
+					console.log(subcontent[a]);
+				}(a);
 				console.log(j);
-				console.log(subcontent[j])//.style.display = 'block';
+				//console.log(subcontent[j])//.style.display = 'block';
 				console.log(123);
 			};
-		}
+		}(j);
 	}
 
 	/*var subtab = document.getElementsByClassName('subtab');
