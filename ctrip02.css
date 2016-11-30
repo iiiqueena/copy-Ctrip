@@ -408,6 +408,7 @@ body{
 	color: #2577e3;
 }
 .salesnav{
+	position: relative;
 	font-size: 0;
 	position: relative;
 	width: 50%;
@@ -430,13 +431,17 @@ body{
 
 .salesbar{	
 	background-color: #2577e3;
+	width: 10%;
 }
 
+
 .contenttitle{	
+	width: 30%;
 	padding: 0;
 	font-size: 16px;
 	list-style-type: none;
 	border-left: 5px #2577e3 solid;
+	cursor: pointer;
 }
 
 .contenttitle:hover {
@@ -444,24 +449,53 @@ body{
 	border-left: 5px #fd982e solid;
 	color: #2577e3;
 }
-.contentbar{
-	position: relative;
+.click{
+	width: 30%;
+	padding: 0;
+	font-size: 16px;
+	list-style-type: none;
+	cursor: pointer
+	background-color: white;
+	border-left: 5px #fd982e solid;
+	color: #2577e3;
 }
+.contentbar{
+	position: absolute;
+	left: 15%;
+	top: 15%;
+	display: none;
+}
+
 .subtab{
 	display: inline-block;
 }
 .subtitle{
-
+	font-size: 14px;
+	font-weight: bold;
+	padding: 2px;
+	color: #666;
+	cursor: pointer;
 }
 .subcontent{
-
+	position: absolute;
 	display: none;
+	color: black;
 }
 .selectcontent{
 	display: block;
 	position: absolute;
-	left: 100px;
 }
+.subcontent p{
+	line-height: 220%;
+}
+.subcontent button{
+	float: right;
+}
+.catogory input{
+	width: 100px;
+	margin-right: 10px;
+}
+
 
 /*** mainbody ******/
 .mainbody{
