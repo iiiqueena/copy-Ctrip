@@ -396,9 +396,9 @@ body{
 .navradio{
 	display: none;
 }
-#navradio1:checked ~ .contentarea #content1, #navradio2:checked ~ .contentarea #content2, #navradio3:checked ~ .contentarea #content3, #navradio4:checked ~ .contentarea #content4, #navradio5:checked ~ .contentarea #content5, #navradio6:checked ~ .contentarea #content6, #navradio7:checked ~ .contentarea #content7{
+/*#navradio1:checked ~ .contentarea #content1, #navradio2:checked ~ .contentarea #content2, #navradio3:checked ~ .contentarea #content3, #navradio4:checked ~ .contentarea #content4, #navradio5:checked ~ .contentarea #content5, #navradio6:checked ~ .contentarea #content6, #navradio7:checked ~ .contentarea #content7{
 	display: block;
-}
+}*/
 #navradio1:checked ~ .salesbar #contenttitle1, #navradio2:checked ~ .salesbar #contenttitle2, #navradio3:checked ~ .salesbar #contenttitle3, #navradio4:checked ~ .salesbar #contenttile4, #navradio5:checked ~ .salesbar #contenttitle5, #navradio6:checked ~ .salesbar #contenttitle6, #navradio7:checked ~ .salesbar #contenttitle7{
 	background-color: white;
 	border-left: 5px #fd982e solid;
@@ -472,13 +472,9 @@ body{
 	position: absolute;
 	display: none;
 }
-}
-.searchhotel{
-	height: 30px;
-	width: 50px;
-}
 
 .contentbar{
+	cursor: pointer;
 	margin-bottom: 10px;
 	border-bottom: solid 3px #d2d2d2;
 }
@@ -487,7 +483,7 @@ body{
 	font-family: "Microsoft YaHei", SimSun, Tahoma, Verdana, Arial, sans-serif;
 	font-size: 14px;
 	padding-right: 10px;
-
+	color: rgb(102, 102, 102);
 }
 .contentdetail{
 	font-family: "Microsoft YaHei", SimSun, Tahoma, Verdana, Arial, sans-serif;
@@ -510,11 +506,12 @@ input{
 }
 
 .searchhotel{
-	width: 120px;
+	height: 30px;
+	width: 100px;
 	position: relative;
 	background-color: orange;
 	color: white;
-	left: 300px;
+	left: 200px;
 	vertical-align: baseline;
 }
 
@@ -527,9 +524,7 @@ input{
 .tripcontent{
 	display: none;
 }
-#trip1{
-	display: block;
-}
+
 .trip{
 	font-size: 0;
 }
@@ -541,13 +536,36 @@ input{
 
 .tripnavbar{
 	display: inline-block;
-
+	width: 60%;
 }
-.tripnavbar > li{
+
+.navtitle{
 	display: inline-block;
+	cursor: pointer;
+	width: 12%;
+	text-align: center;
 }
 .tripnav > span{
 	float: right;
+}
+
+.trangle{
+	display: none;
+	margin-left: 3%;
+	position: absolute;
+	width: 0px;
+    height: 0px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 8px solid #3e85e2;
+}
+.trip_content{
+	padding-top: 10px;
+	background-color: white;
+}
+.tripcontent{
+	box-sizing: border-box;
+	padding: 0 10px;
 }
 .contentdetail, .tripad{
 	display: inline-block;
@@ -555,36 +573,52 @@ input{
 	vertical-align: top;
 }
 .triptab{
+	box-sizing: border-box;
 	padding: 10px 10px 10px 20px;
 	background-color: white;
 }
 
-.tripcontent{
-	display: 
-}
 .contenttab > ul{
 	margin-bottom: 10px;
 	display: inline-block;
 }
-.contenttab > ul >li{
+.contenttab > ul >li, #boat{
 	display: inline-block;
-	padding: 2px 2px;
+	padding: 4px 4px;
 	margin-right: 10px;
 	font-size: 12px;
-	border:1px solid black;
-	border-radius: 2px;
+	border:2px solid white;
+	border-radius: 4px;
+	cursor: pointer;
+	color: #2c7ae0;
+}
+.contenttab > ul >li:hover {
+	background-color: #2c7ae0;
+	color: white;
+}
+#active{
+	background-color: #2c7ae0;
+	color: white;
+}
+#boat:visited{
+	color: #2c7ae0;
+}
+#boat:hover {
+	background-color: #2c7ae0;
+	color: white;
 }
 .contenttab >span{
 	font-size: 12px;
 	display: inline-block;
 	float: right;
 }
-.contentdetail{
+.triptab{
 	width: 80%;
+	display: inline-block;
 }
 .tripad{
-	font-size: 12px;
-	width: 15%;
+	width: 20%;
+	display: inline-block;
 }
 .contentphoto{
 	font-size: 0;
@@ -600,27 +634,42 @@ input{
 	display: none;
 }
 .tripphoto{
+	box-sizing: border-box;
+	padding-left: 10px;
 	display: inline-block;
 	width: 25%;	
 	font-size: 8px;
 	line-height: 16px;
+
+}
+.tripphoto:hover img{
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1); /*Safari 和 Chrome*/
+	-moz-transform: scale(1.1); /*Firefox*/
+	-ms-transform: scale(1.1); /*IE9*/
+	-o-transform: scale(1.1); /*Opera*/
 }
 .photo{
-	position: relative;	
-	font-size: 0;
+	height: 120px;
+    position: relative;
+    font-size: 0;
+    overflow: hidden;
+    margin-bottom: 5px;
 }
 .photo > img{
-	width: 95%;
+	width: 100%;
 	z-index: 0;
 }
+
 .shadow{
 	font-size: 10px;
 	color: white;
-	width: 95%;
+	width: 100%;
 	background-color: rgba(0,0,0,0.5);
 	position: absolute;
 	line-height: 15px;
-	bottom: 8px;
+	bottom: 0;
+	padding-left: 5px;
 	z-index: 99;	
 }
 .title{
@@ -634,4 +683,31 @@ input{
 	font-size: 22px;
 	color: #f60;
 	text-align: right;
+}
+
+.sidebar{	
+	height: 400px;
+	width: 20%;
+	display: inline-block;
+}
+.hotbar{
+	font-size: 12px;
+	font-weight: bold;
+
+}
+.bar{
+	margin-bottom: 100px;
+}
+.bar ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding-right: 5px;
+	font-size: 10px;
+	padding: 5px;
+
+}
+#lefttab{
+	width: 80%;
+	float: right;
+	display: inline-block;
 }
