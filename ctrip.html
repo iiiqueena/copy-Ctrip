@@ -264,7 +264,7 @@
 				<input type="radio" name="navradio" class="navradio" id="navradio5"></input>
 				<input type="radio" name="navradio" class="navradio" id="navradio6"></input>
 				<input type="radio" name="navradio" class="navradio" id="navradio7"></input>
-				<ul class="salesbar" id="tab1">
+				<ul class="salesbar" id="barsales">
 					<li class="contenttitle" id="contenttitle1"><label class="navtab" id="navtab1" for="navradio1">酒店</label></li>
 					<li class="contenttitle" id="contenttitle2"><label class="navtab" id="navtab2" for="navradio2">机票</label></li>
 					<li class="contenttitle" id="contenttitle3"><label class="navtab" id="navtab3" for="navradio3">自由行</label></li>
@@ -273,7 +273,7 @@
 					<li class="contenttitle" id="contenttitle6"><label class="navtab" id="navtab6" for="navradio6">租车</label></li>
 					<li class="contenttitle" id="contenttitle7"><label class="navtab" id="navtab7" for="navradio7">门票</label></li>
 				</ul>
-				<div class="contentarea">
+				<div class="contentarea" id="contentarea">
 					<div class="content" style="display: block;">
 						<ul class="contentbar" id="hoteltab">
 							<li class="subtab">国内酒店</li>
@@ -650,18 +650,18 @@
 
 		<div class="trip">
 			<div class="tripnav">
-				<ul class="tripnavbar">
-					<li class="navtitle">特卖汇<div class="trangle"></div></li>
-					<li class="navtitle">出境游<div class="trangle"></div></li>
-					<li class="navtitle">国内游<div class="trangle"></div></li>
-					<li class="navtitle">周边游<div class="trangle"></div></li>
-					<li class="navtitle">邮轮<div class="trangle"></div></li>
-					<li class="navtitle">门票<div class="trangle"></div></li>
-					<li class="navtitle">顶级游<div class="trangle"></div></li>
+				<ul class="tripnavbar" id="navbartrip">
+					<li>特卖汇 <span></span></li>
+					<li>出境游 <span></span></li>
+					<li>国内游 <span></span></li>
+					<li>周边游 <span></span></li>
+					<li>邮轮 <span></span></li>
+					<li>门票 <span></span></li>
+					<li>顶级游 <span></span></li>
 				</ul>
 				<span>北京出发</span>
 			</div>
-			<div class="trip_content">
+			<div class="trip_content" id="trip_content">
 				<div class="tripcontent" style="display: block;">
 					<div class="triptab">
 						<div class="contenttab">
@@ -1411,7 +1411,60 @@
 		<div class="locla"></div>
 		<div class="global"></div>
 		<div class="destination"></div>
-		<div class="service"></div>
+		<div class="service">
+			<h3 class="servicetitle">旅行服务
+				<span></span>
+			</h3>
+			<div class="servicecontent">
+				<div class="wifi">
+					<div class="outline">
+						<img src="img/wifi.png">
+						<div class="intro">
+							<h4>出境WIFI</h4>
+							<p>全球出境WiFi租赁</p>
+							<p>流量不限、多人共享、携带便捷、低价信号强</p>
+						</div>
+					</div>
+					<ul class="supplylist" id="wifilist">
+						<li><img src="img/supply_icon.png">日本</li>
+						<li><img src="img/supply_icon.png">韩国</li>
+						<li><img src="img/supply_icon.png">欧洲通用</li>
+						<li><img src="img/supply_icon.png">更多</li>
+					</ul>
+				</div>
+				<div class="passport">
+					<div class="outline">
+						<img src="img/passport.png">
+						<div class="intro">
+							<h4>签证</h4>
+							<p>退款保障：送签前均可申请订单全额退款</p>
+							<p>出签成功率 99.8%</p>
+						</div>
+					</div>
+					<ul class="supplylist" id="wifilist">
+						<li><img src="http://pic.c-ctrip.com/vacation_v2/visa/24-japan.png">日本</li>
+						<li><img src="http://pic.c-ctrip.com/vacation_v2/visa/24-korea.png">韩国</li>
+						<li><img src="http://pic.c-ctrip.com/vacation_v2/visa/24-USA.png">美国</li>
+						<li><img src="http://pic.c-ctrip.com/vacation_v2/visa/24-Australia.png">澳大利亚</li>
+					</ul>
+				</div>
+				<div class="insurance" id="insurance">
+					<div class="outline">
+						<img src="img/insurance.png">
+						<div class="intro">
+							<h4>保险</h4>
+							<p>携程保险，安心随行</p>
+							<p>旅游定制、极速出保、便捷理赔</p>
+						</div>
+					</div>
+					<ul class="supplylist" id="wifilist">
+						<li><img src="http://images3.c-ctrip.com/vacationUED_pic/meiya.png">【申根之王】</li>
+						<li><img src="http://images3.c-ctrip.com/vacationUED_pic/pingan.png">【亚洲优选】</li>
+						<li><img src="http://images3.c-ctrip.com/vacationUED_pic/pingan.png">【国内畅游】</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 		<div class="corp"></div>		
 	</div>
 	<div class="footer">

@@ -6,41 +6,59 @@ function mouseOutColor() {
 	var a = document.getElementById('search');
 	a.style.backgroundColor = '#a4cbff';// body...
 }
-function trangle(){
-	this.getElementsByTagName('div').style.display = 'block';
+
+
+
+function showTrangle(idname,indexnum) {//三角符号
+		var content = document.getElementById(idname).getElementsByTagName('li');
+		for(var i=0;i<content.length;i++){
+			content[i].className = '';
+		}
+		content[indexnum].className = 'cur';
+	}
+function changeTab(contentclassname,indexnum){//切换
+	var content = document.getElementsByClassName(contentclassname);		
+	for(var i=0;i<content.length;i++){
+			content[i].style.display = 'none';
+		}
+		content[indexnum].style.display = 'block';
 }
 
-function tab(title,content){
-	var contenttitle = document.getElementsByClassName(title);
-	var content = document.getElementsByClassName(content);
-	var firsttitle = contenttitle[0];
-	var firstcontent = content[0];
-	var click = function (navindex) {
-		console.log(navindex);
-		return function() {			
-			if (firsttitle) {
-				firstcontent.style.display = 'none';
-			}
-			content[navindex].style.display = 'block';
-			//content[navindex].getElementsByClassName('selectcontent').style.display = 'block';
-			first = content[navindex];
-			// body...
-		};
-		// body...
-	}
-	// body...
-	for (var i = 0; i < contenttitle.length; i++) {
-		contenttitle[i].onclick = click(i);
+function tabTransCallback(tabid,contentclassname,indexnum){
+		return function(){
+			showTrangle(tabid,indexnum);
+			changeTab(contentclassname,indexnum);
+		}
+}
+function changeTabCallback(contentclassname,indexnum){
+		return function(){
+			changeTab(contentclassname,indexnum);
+		}
+}
+
+function tab(tabid,contentclassname){
+	var tab = document.getElementById(tabid).getElementsByTagName('li');
+	for (var i = 0; i < tab.length; i++) {
+		var curr_index_num = i;
+		tab[i].onclick = changeTabCallback(contentclassname,curr_index_num);
 	}
 }
+
+function tabTrans(tabid,contentclassname){//绑定
+	var tab = document.getElementById(tabid).getElementsByTagName('li');
+	for (var i = 0; i < tab.length; i++) {
+		var curr_index_num = i;
+		tab[i].onclick = tabTransCallback(tabid,contentclassname,curr_index_num);
+	}
+	
+}
+
 function subtab(tab,content,subcontent,backgroundColor1,color1,backgroundColor2,color2){
 	var subtab = document.getElementById(tab).getElementsByTagName('li');
 	var subcontent = document.getElementById(content).getElementsByClassName(subcontent);
-	console.log('123' + content);
 	var firstcontent = subcontent[0];
 	var firsttab = subtab[0];
 	var click = function (navindex) {
-		console.log(navindex);
 		return function() {			
 			if (firsttab) {
 				firstcontent.style.display = 'none';
@@ -65,22 +83,6 @@ function subtab(tab,content,subcontent,backgroundColor1,color1,backgroundColor2,
 }
 
 
-	/*var subtab = document.getElementsByClassName('subtab');
-	var subcontent = document.getElementsByClassName('subcontent');
-	if (subtab.length != subcontent.length) {
-		return;
-	}	
-	for (var i = 0; i < subtab.length; i++) {
-		subtab[i].id = i;
-		subtab[i].onclick = function(){
-			for (var j = 0; j < subtab.length; j++) {
-				subcontent[j].style.display = 'none';				
-			}
-			subcontent[this.id].style.display = 'block';			
-		};//onclick触发时会遍历吗？？	
-	}*/
-	
-
 window.onload = function dropDown(argument) {
 	var nav_dropdown = document.getElementsByClassName('navdropdown');
 	var nav_detail = document.getElementsByClassName('navdetail');
@@ -89,11 +91,8 @@ window.onload = function dropDown(argument) {
 	var last = nav_detail[0];
 	var show = function(index){
 		return function(){
-			console.log(index);
 			if (last) {last.style.display = 'none';}
 			nav_detail[index].style.display = 'block';
-			//nav_detail[index].style.paddingRight = '10px';
-			//console.log(nav_detail[index].style.paddingRight);
 			last = nav_detail[index];
 		};
 	}
@@ -101,8 +100,8 @@ window.onload = function dropDown(argument) {
 		nav_dropdown[i].onmouseover = show(i);
 	// body...
 	} 
-	tab('contenttitle','content');
-	tab('navtitle','tripcontent');
+
+	
 	subtab('hoteltab','hotelcontent','subcontent','white','#666666','white','#2c7ae0');
 	subtab('airtab','aircontent','subcontent','white','#666666','white','#2c7ae0');
 	subtab('freetab','freecontent','subcontent','white','#666666','white','#2c7ae0');
@@ -110,7 +109,6 @@ window.onload = function dropDown(argument) {
 	subtab('oltab','olcontent','subcontent','white','#666666','white','#2c7ae0');
 	subtab('allsalestab','allsalescontent','contentphoto','white','#2c7ae0','#2c7ae0','white');
 	subtab('outdoortab','outdoorcontent','contentphoto','white','#2c7ae0','#2c7ae0','white');
-	document.getElementsByClassName('navtitle').onclick = trangle();
-
-
+	tabTrans('navbartrip','tripcontent');
+	tab('barsales','content');
 }
