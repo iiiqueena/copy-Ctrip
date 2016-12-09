@@ -712,6 +712,9 @@ input{
 	display: inline-block;
 }
 /*service*/
+.service{
+	margin-bottom: 20px;
+}
 .servicetitle{
 	position: relative;
 	margin-top: 30px;
@@ -797,48 +800,133 @@ input{
 .supplylist li *{
 	vertical-align: middle;
 }
-/*corp*/
-.indices-hot, .indices-nav {
-    margin-right: -5px;
-    padding-left: 80px;
-    display: block;
-    height: 24px;
-    overflow: hidden;
+#lastlist{
+	border-right: none;
 }
-.indices .mod-hd {
-    height: 98px;
+/*corp*/
+.corp{
     border: 1px solid #e0e0e0;
     padding: 0;
     background: #fff;
     overflow: hidden;
+    line-height: 2;
 }
-.mod-hd {
+.corp dt {
+    font-size: 12px;
+    font-weight: bold;
+    color: #666;
+}
+.corp a:hover {
+    text-decoration: none;
+    color: #3983e5;
+}
+.corp a {
+    color: #b6b6b6;
+    font-size: 12px;
+}
+.corp-bd, .corp-hd{
+    overflow: hidden;
+}
+/*corp-hd*/
+.corp-hd {
     position: relative;
-    z-index: 10;
-    height: 36px;
-    border-bottom: 2px solid #3983e5;
     text-align: left;
+    border-bottom: 1px solid #e0e0e0;
 }
-.indices-hot dt, .indices-nav dt {
+.part, .partner{
+	box-sizing: border-box;
+	padding: 10px 15px;
+}
+.part {
+    float: left;
+    display: inline-block;
+    
+}
+.part li{
+	list-style-type: none;
+}
+.partInfo {
+    width: 20%;
+    border-right: 1px solid #e0e0e0;
+}
+.part-hd {
+    position: relative;
+    font: 16px/26px "Microsoft YaHei", SimSun, Tahoma, Verdana, Arial, sans-serif;
+    margin-bottom: 5px;
+}
+.part-hd-right {
+    position: absolute;
+    right: 0;
+    font: 12px/26px 'SimSun';
+}
+.part-bd, .part-bd a {
+    font-size: 12px;
+    font-family: 'simsun';
+    color: #666;
+    line-height: 1.8;
+}
+
+.partner{
+	width: 80%;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+.partner li{
+	display: inline-block;
+}
+
+.partner a {
+    display: inline-block;
+    position: relative;
+}
+
+.partner .part-bd li {
+    float: left;
+    width: 16.5%;
+    border-left: 1px dashed #e0e0e0;
+    text-align: center;
+}
+#firstcorp{
+	border: none;
+}
+.part-bd img{
+	height: 40px;
+    text-align: center;
+}
+/*corp-bd*/
+.corp-bd{
+	padding: 10px 15px;
+}
+.corp-hot, .corp-nav {
+    margin-right: -5px;
+    padding-left: 80px;
+    display: block;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+}
+.corp-nav {
+    height: auto;
+}
+
+.corp-hot dt, .corp-nav dt {
     float: left;
     display: inline;
     width: 80px;
     margin-left: -80px;
 }
-.indices dt {
-    font-size: 12px;
-    font-weight: bold;
-    color: #666;
-}
-.indices a:hover {
-    text-decoration: none;
-    color: #3983e5;
-}
-.indices-hot dd, .indices-nav dd {
+
+.corp-hot dd, .corp-nav dd {
     float: left;
     width: 84px;
     margin-right: 5px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+.corp-line {
+    height: 0;
+    overflow: hidden;
+    border-bottom: 1px dotted #ccc;
+    margin: 5px 0;
 }
